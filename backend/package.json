@@ -4,7 +4,7 @@
   "description": "Backend for Replit Copy",
   "main": "backend/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node backend/index.js"
   },
   "keywords": [],
   "author": "Natu1108 and DeepSeek",
