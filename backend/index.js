@@ -19,7 +19,7 @@ app.post('/execute', async (req, res) => {
           content: code,
         },
       ],
-    }),
+    });
 
     res.json({ output: response.data.run.output });
   } catch (error) {
@@ -29,5 +29,5 @@ app.post('/execute', async (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log('Server running on http://localhost:${PORT}');
+  console.log(`Server running on http://localhost:${PORT}`);
 });
