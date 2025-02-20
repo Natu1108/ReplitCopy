@@ -25,7 +25,7 @@ const executeCode = async (code, language) => {
   outputElement.textContent = 'Executing...';
 
   try {
-    const repsponse = await fetch('https://localhost:5000/execute', {
+    const repsponse = await fetch('https://ReplitCopy.onrender.com/execute', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ code, language }),
