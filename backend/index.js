@@ -7,6 +7,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the Replit Copy Backend!');
+});
+
 app.post('/execute', async (req, res) => {
   const { code, language } = req.body;
 
